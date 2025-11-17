@@ -28,6 +28,18 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
+      - name: Debug includes
+        run: |
+          echo "WORKDIR: $(pwd)"
+          echo "--- docs/_includes ---"
+          ls -la docs/_includes || true
+          echo "--- _includes (repo root) ---"
+          ls -la _includes || true
+          echo "--- docs/air-quality ---"
+          ls -la docs/air-quality || true
+          echo "--- repo root listing ---"
+          ls -la | sed -n '1,200p'
+
       - name: execute python workflows from bash script
         env:
           HOPSWORKS_API_KEY: ${{ secrets.HOPSWORKS_API_KEY }}
