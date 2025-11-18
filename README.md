@@ -156,9 +156,3 @@ batch_data["predicted_pm25"] = pd.Series(preds, dtype="float32")
 batch_data
 ```
 
-# COMMENTS IN GENERAL 
-We went through several iterations to reach the final working solution. As a result, there are multiple branches in the repository, but the correct and complete version is the final branch.
-Because of earlier issues with duplicate entries in Hopsworks—which we did not detect immediately—some data points were missing in the hindcast for previous versions. This is why the current hindcast only shows a limited range.
-
-For the presentation, the final version will include the complete hindcast predictions using data from the 17th up to the presentation date.
-
