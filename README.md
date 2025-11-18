@@ -45,6 +45,10 @@ Branch in git is "final", exist as default though.
 
 Link for the dashboard: https://astega1.github.io/mlfs-book/air-quality/ 
 
+
+## Introduction to ML
+I wrote a brief introduction to machine learning [here](./introduction_to_supervised_ml.pdf)
+
 # Changes we made in notebook 1:
 
 ### Adding lag values
@@ -158,10 +162,3 @@ Because of earlier issues with duplicate entries in Hopsworks—which we did not
 
 For the presentation, the final version will include the complete hindcast predictions using data from the 17th up to the presentation date.
 
-
-
-
-
-
-## Introduction to ML
-I wrote a brief introduction to machine learning [here](./introduction_to_supervised_ml.pdf)
